@@ -1,0 +1,42 @@
+# This is a sample scene file
+# The syntax is explained below
+# For commenting, you can start lines with hashtags '#'
+# Aslo empty lines are allowed
+# Apart from those, only valid object syntax lines are accepted
+# Invalid lines will result in program quitting before rendering
+
+
+# Different types of objects:
+
+# camera (one camera must be set, and only one allowed)
+# format:
+# type,position(x,y,z),rotation(x,y,z)
+# example:
+
+camera,0,0,-150,0,0,0
+
+# light (maximum of 4 lights allowed)
+# format:
+# type,position(x,y,z),intensity
+# intensity value must be between 1 and 1000
+# example:
+
+light, 50, 40, -100, 300
+
+# shapes: (maximum of 9 shaped objects allowed)
+#	cone (max radius 5)
+#	cylinder
+#	plane
+#	sphere
+# format:
+# type,position(x,y,z),rotation(x,y,z),size,color
+# color options: white, red, yellow, green, cyan, blue, pink and black
+# examples:
+
+cone,50,10,0,0,0,0,0.2,white
+cylinder,0,0,0,0,0,45,10,blue
+plane,0,-10,0,0,0,0,0,red
+sphere,-50,0,0,0,0,0,20.1,magenta
+sphere,-50,0,0,0,0,0,20.1,green
+
+# rotation values are given in degrees must be between -180 and 180
